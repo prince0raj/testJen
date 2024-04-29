@@ -6,21 +6,16 @@ import java.util.Properties;
 
 public class Main {
     public static void main(String[] args) {
-        // Load properties file
-        Properties properties = new Properties();
-        try (InputStream inputStream = Main.class.getResourceAsStream("/testJens.properties")) {
-            properties.load(inputStream);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        // Access and print the value of the s3key property
-        String s3key = properties.getProperty("s3key");
-        System.out.println("s3key value: " + s3key);
-
-//        System.out.println("Loading properties from: " + Main.class.getResource("/testJens.properties"));
-
         // Your existing code
+//        if (args.length > 0) {
+//            // Print all command-line arguments
+//            System.out.println("Command-line arguments:");
+//            for (String arg : args) {
+//                System.out.println(arg);
+//            }
+//        } else {
+//            System.out.println("No command-line arguments provided.");
+//        }
         System.out.println("Hello world!");
     }
 }
