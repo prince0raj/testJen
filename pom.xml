@@ -8,10 +8,19 @@
     <artifactId>testJen</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+    </build>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <s3key>default-value</s3key>
+        <s.key>default-value</s.key>
     </properties>
 </project>
